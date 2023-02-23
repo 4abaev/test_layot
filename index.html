@@ -12,7 +12,7 @@
 <body>
     <main>
         <div class="scroll_bar"></div>
-        <div class="container">
+        <div>
             <header>
                 <div class="cap">
                     <div class="logo">
@@ -53,6 +53,12 @@
                             <div class="phone_order_text">Заказать звонок</div> <img src="./images/phone.svg" alt="phone" class="phone_img">
                         </div>
                     </div>
+                    <div class="burger_menu" onclick="handleBurgerMenu()">
+                     <div class="burger_line" ></div>
+                            <div class="burger_line"></div> 
+                            <div class="burger_line"></div>
+
+                    </div>
                 </div>
                 <div class="cap_bottom"></div>
                 <div class="menu">
@@ -68,7 +74,7 @@
                 </div>
                 <div class="menu"></div>
             </header>
-            <div class="main_content">
+            <div class="main_content" id="main_content">
                 <div class="content">
                     <div class="title">Профессиональный <strong>ремонт
                             двигателей</strong> HYUNDAI и KIA <br>
@@ -115,6 +121,7 @@
 
     </main>
     <footer>FOOTER</footer>
+    <script src="./scripts.js"></script>
 </body>
 
 </html>

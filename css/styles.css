@@ -39,6 +39,7 @@ header {
     display: flex;
     width: 19.5vw;
 }
+
 .logo_img {
     width: 10.4vw;
     height: 3vw;
@@ -66,6 +67,7 @@ header {
     display: flex;
     width: 10.5vw;
 }
+
 .map_img {
     width: 2vw;
     height: 2vw;
@@ -91,10 +93,12 @@ header {
     display: flex;
     width: 7.5vw;
 }
+
 .check_img {
     width: 0.8vw;
     height: 1vw;
 }
+
 .check_text {
     font-family: 'Manrope';
     font-style: normal;
@@ -116,6 +120,7 @@ header {
     align-items: center;
     width: 11vw;
 }
+
 .calculator_img {
     width: 2vw;
     height: 2vw;
@@ -167,10 +172,12 @@ header {
     margin-left: 0.5vw;
     width: 6.5vw;
 }
+
 .link_img {
     width: 2vw;
     height: 2vw;
 }
+
 .phone {
     width: 10.5vw;
     display: flex;
@@ -185,10 +192,12 @@ header {
     align-items: center;
 
 }
+
 .greenCircle_img {
     width: 0.263vw;
     height: 0.263vw;
 }
+
 .phone_text {
     margin-left: 0.3vw;
 
@@ -207,19 +216,23 @@ header {
 
     color: #2A2A2A;
 }
+
 .phone_img {
-   width: 0.4vw;
-   height: 0.4vw; 
+    width: 0.4vw;
+    height: 0.4vw;
 }
+
 .phone_contact {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .arrow_img {
     width: 0.6vw;
     height: 0.367vw;
 }
+
 .number {
     margin-right: 0.3vw;
 
@@ -286,14 +299,18 @@ header {
     text-decoration: none;
 }
 
-.container {}
-
 .main_content {
     background:
         linear-gradient(180deg, rgba(22, 26, 30, 0.75) 0%, rgba(22, 26, 30, 0.2925) 36.3%),
         linear-gradient(270deg, rgba(22, 26, 30, 0) 0%, rgba(22, 26, 30, 0.6375) 79.17%),
         url("../images/bg.png");
     background-size: cover;
+    height: 49vw;
+    width: 93.3vw;
+}
+
+.main_content_white {
+    background: #FFFFFF;
     height: 49vw;
     width: 93.3vw;
 }
@@ -385,10 +402,12 @@ header {
     cursor: pointer;
 
 }
+
 .pickaxe_img {
     width: 1.533vw;
     height: 1.533vw;
 }
+
 .transparent_button_text {
     margin-left: 1vw;
 
@@ -405,10 +424,12 @@ header {
     letter-spacing: 0.04em;
     color: #FFFFFF;
 }
+
 .whatsapp_button_img {
     width: 2vw;
     height: 2vw;
 }
+
 .bullets {
     width: 80vw;
     height: 9.25vw;
@@ -427,12 +448,70 @@ header {
 
     color: #FFFFFF;
 }
+
 .jackdaw_img {
     width: 0.9vw;
     height: 0.6vw;
 }
+
 .side_border {
     margin: 0 5vw 0 5vw;
     opacity: 0.25;
     border: 0.1vw solid #FFFFFF;
+}
+
+.burger_menu {
+    display: none;
+}
+
+.burger_line {
+    width: 3vw;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background: linear-gradient(180deg, rgba(22, 26, 30, 0.75) 0%, rgba(22, 26, 30, 0.2925) 36.3%),
+                    linear-gradient(270deg, rgba(22, 26, 30, 0) 0%, rgba(22, 26, 30, 0.6375) 79.17%),
+                    url("../images/bg.png");
+    }
+    .burger_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 2vw;
+        cursor: pointer;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .check {
+        display: none;
+    }
+
+    .calculator {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .cap_bottom {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .main_content {
+        background: none;
+    }
+    .content {
+        padding: 0;
+        text-align: center;
+    }
 }
