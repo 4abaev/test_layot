@@ -1,14 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 main {
     display: flex;
 }
+
 .scroll_bar {
     width: 7.3vw;
 }
-header {
 
+header {
+    margin: 1vw 3.3vw 1vw 0;
+    height: 9vw;
+}
+
+.cap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90vw;
+
+}
+
+.cap_bottom {
+    margin-top: 1vw;
+    border-bottom: 1px solid #2A2A2A;
+    opacity: 0.15;
+}
+
+.logo {
+    display: flex;
+    width: 19.5vw;
+}
+
+.services {
+    margin-left: 1.2vw;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    /* or 182% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    color: #2A2A2A;
+
+}
+
+.map {
+    display: flex;
+    width: 10.5vw;
+}
+
+.adress {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    /* or 164% */
+
+    display: flex;
+    align-items: center;
+
+    color: #2A2A2A;
+
+    margin-left: 0.5vw;
+}
+
+.check {
+    display: flex;
+    width: 7.5vw;
+}
+
+.check_text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+
+    color: #2A2A2A;
+
+    margin-left: 0.5vw;
+
+}
+
+.calculator {
+    display: flex;
+    width: 10vw;
+}
+
+.calculator_text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 19px;
+    /* or 173% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+
+    color: #2A2A2A;
+
+    margin-left: 1.2vw;
+
+}
+
+.contact {
+    display: flex;
+    width: 12.5vw;
+}
+
+.contact_text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    /* or 164% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: #2A2A2A;
+    width: 5.5vw;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0.5vw;
+    width: 6.5vw;
+}
+
+.phone {
+    width: 10.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 3.5vw;
+}
+
+.phone_schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.phone_text {
+    margin-left: 0.3vw;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    /* identical to box height, or 83% */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: 0.02em;
+
+    color: #2A2A2A;
+}
+
+.phone_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.number {
+    margin-right: 0.3vw;
+
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 10px;
+    /* or 50% */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #2A2A2A;
+}
+
+.phone_order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone_order_text {
+    margin-right: 0.3vw;
+
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    /* or 175% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+
+    color: #2A2A2A;
+}
+
+.menu {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    height: 3vw;
+}
+
+.menu_element {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    color: #2A2A2A;
+    text-decoration: none;
+}
+
+.container {}
+
+.main_content {
+    background:
+        linear-gradient(180deg, rgba(22, 26, 30, 0.75) 0%, rgba(22, 26, 30, 0.2925) 36.3%),
+        linear-gradient(270deg, rgba(22, 26, 30, 0) 0%, rgba(22, 26, 30, 0.6375) 79.17%),
+        url("../images/bg.png");
+    background-size: cover;
+    height: 49vw;
+    width: 93.3vw;
+}
+
+.content {
+    width: 93.3vw;
+    padding: 6.6vw 6vw 0 6vw;
+}
+
+.title {
+    margin-bottom: 1.3vw;
+    width: 52.6vw;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 95px;
+    /* or 146% */
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+
+}
+
+.subtitle {
+    margin-bottom: 3vw;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 45px;
+    /* identical to box height, or 167% */
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    height: 5.2vw;
+    width: 43vw;
+    margin-bottom: 6.4vw;
+}
+
+.red_button {
+    background: #FD2016;
+    width: 20.8vw;
+    border-radius: 500px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red_button_text {
+    margin-right: 1vw;
+    width: 12vw;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}
+
+.transparent_button {
+    width: 20.8vw;
+
+    background: #000000;
+    opacity: 0.45;
+    border: 1px solid #FFFFFF;
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.transparent_button_text {
+    margin-left: 1vw;
+
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.bullets {
+    width: 80vw;
+    height: 9.25vw;
+    display: flex;
+}
+
+.bullet {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    /* or 159% */
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.side_border {
+    margin: 0 5vw 0 5vw;
+    opacity: 0.25;
+    border: 1px solid #FFFFFF;
 }
