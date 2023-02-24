@@ -8,7 +8,8 @@
 
 main {
     display: flex;
-    height: 1000vh;
+    height: 128vw;
+    margin-bottom: 100vw;
 }
 
 .scroll_bar {
@@ -437,6 +438,7 @@ header {
 }
 
 .bullet {
+
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
@@ -448,10 +450,13 @@ header {
 
     color: #FFFFFF;
 }
-
+.bul1 {
+    width: 30vw;
+}
 .jackdaw_img {
     width: 0.9vw;
     height: 0.6vw;
+    margin-bottom: .5vw;
 }
 
 .side_border {
@@ -470,17 +475,36 @@ header {
 }
 
 @media screen and (max-width: 992px) {
-    body {
+    body {}
+
+    .container {
         background: linear-gradient(180deg, rgba(22, 26, 30, 0.75) 0%, rgba(22, 26, 30, 0.2925) 36.3%),
-                    linear-gradient(270deg, rgba(22, 26, 30, 0) 0%, rgba(22, 26, 30, 0.6375) 79.17%),
-                    url("../images/bg.png");
+            linear-gradient(270deg, rgba(22, 26, 30, 0) 0%, rgba(22, 26, 30, 0.6375) 79.17%),
+            url("../images/bg.png");
+        background-size: cover;
+        width: 100vw
     }
+
     .burger_menu {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 2vw;
         cursor: pointer;
+    }
+
+    .logo {
+        margin-left: 5vw;
+    }
+
+    .logo_img {
+        display: flex;
+        width: 29.5vw;
+        height: 15vw;
+    }
+
+    .services {
+        display: none;
     }
 
     .map {
@@ -510,8 +534,138 @@ header {
     .main_content {
         background: none;
     }
+
     .content {
-        padding: 0;
-        text-align: center;
+        margin-top: 15vw;
+        padding: 0vw 6vw 0 6vw;
+    }
+
+    .title {
+        font-size: 5vw;
+        line-height: 7vw;
+    }
+
+    .subtitle {
+        margin-top: 5vw;
+        font-size: 3.5vw;
+        line-height: 3vw;
+        width: 70vw;
+        margin-bottom: 10vw;
+    }
+
+    .buttons {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        height: 40vw;
+    }
+
+    .red_button {
+        width: 85vw;
+        height: 18vw;
+    }
+
+    .red_button_text {
+        font-size: 3vw;
+        line-height: 5vw;
+        width: 65vw;
+
+    }
+
+    .transparent_button {
+        width: 85vw;
+        height: 18vw;
+    }
+
+    .transparent_button_text {
+        font-size: 3.5vw;
+        width: 65vw;
+    }
+
+    .whatsapp_button_word {
+        margin-left: 1vw;
+        color: green;
+    }
+
+    .pickaxe_img {
+        display: none;
+    }
+
+    .whatsapp_button_img {
+        display: none;
+    }
+
+    .scroll_bar {
+        display: none
+    }
+
+    .phone {
+        margin: 2vw 0 0 14vw;
+        width: 30vw;
+        height: 10vw;
+    }
+
+    .number {
+        color: #FFFFFF;
+        font-size: 3vw
+    }
+
+    .phone_text {
+        color: #FFFFFF;
+        font-size: 2vw;
+    }
+
+    .phone_order_text {
+        color: #FFFFFF;
+        font-size: 2vw;
+    }
+
+    .greenCircle_img {
+        width: 1vw;
+        height: 1vw;
+    }
+
+    .phone_img {
+        width: 1vw;
+        height: 1vw;
+    }
+
+    .arrow_img {
+        display: none;
+    }
+
+    .bullets {
+        justify-content: space-between;
+        width: 90vw;
+        margin-top: 10vw;
+        flex-wrap: wrap;
+    }
+
+    .jackdaw_img {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .bullet {
+        margin-bottom: 5vw;
+        width: 40vw;
+        font-size: 3vw;
+        line-height: 4vw;
+        color: black;
+    }
+    .bul1 {
+        order: 1;
+    }
+    .bul2 {
+        order: 3;
+    }
+    .bul3 {
+        order: 2
+    }
+    .bul4 {
+        order: 2;
+    }
+    .side_border {
+        display: none;
     }
 }
