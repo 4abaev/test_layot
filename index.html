@@ -12,7 +12,7 @@
 <body>
     <main>
         <div class="scroll_bar"></div>
-        <div class="container">
+        <div class="container" id="container">
             <header>
                 <div class="cap">
                     <div class="logo">
@@ -42,18 +42,19 @@
                         </div>
 
                     </div>
+
                     <div class="phone">
                         <div class="phone_schedule"> <img src="./images/greenCircle.svg" alt="greenCircle"
                                 class="greenCircle_img">
-                            <div class="phone_text">Звоните Пн-Сб 10:00 - 21:00 </div>
+                            <div class="phone_text" id="phone_text">Звоните Пн-Сб 10:00 - 21:00 </div>
                         </div>
                         <div class="phone_contact">
-                            <div class="number">+7 (925) 103 33 30 </div><img src="./images/arrow.svg" alt="arrow"
-                                class="arrow_img">
+                            <div class="number" id="number">+7 (925) 103 33 30 </div><img src="./images/arrow.svg"
+                                alt="arrow" class="arrow_img">
                         </div>
                         <div class="phone_order">
-                            <div class="phone_order_text">Заказать звонок</div> <img src="./images/phone.svg"
-                                alt="phone" class="phone_img">
+                            <div class="phone_order_text" id="phone_order_text">Заказать звонок</div> <img
+                                src="./images/phone.svg" alt="phone" class="phone_img">
                         </div>
                     </div>
                     <div class="burger_menu" onclick="handleBurgerMenu()">
@@ -65,17 +66,51 @@
                 </div>
                 <div class="cap_bottom"></div>
                 <div class="menu">
-                    <a href="" class="menu_element">Главная</a>
-                    <a href="" class="menu_element">услуги</a>
-                    <a href="" class="menu_element">модели двигателей</a>
-                    <a href="" class="menu_element">отзывы</a>
-                    <a href="" class="menu_element">стоимость</a>
-                    <a href="" class="menu_element">примеры работ</a>
-                    <a href="" class="menu_element">полезные статьи</a>
-                    <a href="" class="menu_element">о компании</a>
-                    <a href="" class="menu_element">Контакты</a>
+                    <a href="" class="menu_element" id="link_to_main">ГЛАВНАЯ</a>
+                    <a href="" class="menu_element">УСЛУГИ</a>
+                    <div class="over_links" id="over_links"><a href="" class="menu_element_service">Ремонт двигателей
+                            KIA</a>
+                        <a href="" class="menu_element_service">Ремонт двигателей Hyundai</a>
+                    </div>
+                    <a href="" class="menu_element">МОДЕЛИ ДВИГАТЕЛЕЙ</a>
+                    <a href="" class="menu_element">ОТЗЫВЫ</a>
+                    <a href="" class="menu_element">СТОИМОСТЬ</a>
+                    <a href="" class="menu_element">ПРИМЕРЫ РАБОТ</a>
+                    <a href="" class="menu_element">ПОЛЕЗНЫЕ СТАТЬИ</a>
+                    <a href="" class="menu_element">О КОМПАНИИ</a>
+                    <a href="" class="menu_element">КОНТАКТЫ</a>
+
+
                 </div>
-                <div class="menu"></div>
+                <div class="forMob" id="forMob">
+                    <div class="map_for_mob" id="map_for_mob">
+                        <img src="./images/MapMob.svg" alt="mapIcon" class="map_img_mob">
+                        <div class="adress_mob">Адрес автоцентра: <strong> Шоссейный проезд, с4 а/2</strong></div>
+                    </div>
+                    <div class="calculator_for_mob" id="calculator_for_mob">
+                        <img src="./images/CalculatorMob.svg" alt="calculator" class="calculator_img_mob">
+                        <div class="calculator_text_mob">Рассчитать стоимость ремонта <strong class="fv">за 45
+                                сек</strong></div>
+
+                    </div>
+                    <div class="contact_for_mob" id="contact_for_mob">
+                        <img src="./images/Face.svg" alt="Face" class="face_img">
+
+                        <div class="contact_for_mob_text">
+                            <div>
+                                <div>Есть вопрос?</div>
+                                <strong>Задайте его нашему мастеру онлайн</strong>
+                                <div> 
+                                    <a href=""><img src="./images/whatsApp.svg" alt="whatsApp" class="link_img"></a>
+                                    <a href=""><img src="./images/telegram.svg" alt="telegram" class="link_img"></a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
             </header>
             <div class="main_content" id="main_content">
                 <div class="content">
@@ -97,23 +132,27 @@
                         </button>
                     </div>
                     <div class="bullets">
-                        <div class="bullet bul1"> <img src="./images/jackdaw.svg" alt="jackdaw" class="jackdaw_img"> <br>
+                        <div class="bullet bul1"> <img src="./images/jackdaw.svg" alt="jackdaw" class="jackdaw_img">
+                            <br>
                             <strong>Без предоплаты.</strong> <br>
-                        Оплата после ремонта
+                            Оплата после ремонта
                         </div>
                         <div class="side_border"></div>
-                        <div class="bullet bul2"> <img src="./images/jackdaw.svg" alt="jackdaw" class="jackdaw_img"> <br>
+                        <div class="bullet bul2"> <img src="./images/jackdaw.svg" alt="jackdaw" class="jackdaw_img">
+                            <br>
                             <strong>Работаем официально</strong>
                             с оформлением заказ-нарядов и чеков
                         </div>
 
                         <div class="side_border"></div>
-                        <div class="bullet bul3" > <img src="./images/jackdaw.svg" alt="jackdaw" class="jackdaw_img"> <br>
+                        <div class="bullet bul3"> <img src="./images/jackdaw.svg" alt="jackdaw" class="jackdaw_img">
+                            <br>
                             <strong>Оригинальные запчасти</strong>
                         </div>
                         <div class="side_border"></div>
 
-                        <div class="bullet bul4"> <img src="./images/jackdaw.svg" alt="jackdaw" class="jackdaw_img"> <br>
+                        <div class="bullet bul4"> <img src="./images/jackdaw.svg" alt="jackdaw" class="jackdaw_img">
+                            <br>
                             <strong>Лучшие цены на рынке</strong> благодаря прямым поставкам запчастей и собственному
                             цеху механической обработки
                         </div>

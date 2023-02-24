@@ -9,7 +9,7 @@
 main {
     display: flex;
     height: 128vw;
-    margin-bottom: 100vw;
+    margin-bottom: 150vw;
 }
 
 .scroll_bar {
@@ -160,7 +160,6 @@ header {
 
     display: flex;
     align-items: center;
-    letter-spacing: 0.03em;
 
     color: #2A2A2A;
     width: 5.5vw;
@@ -168,15 +167,13 @@ header {
 
 .links {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: 0.5vw;
     width: 6.5vw;
 }
 
 .link_img {
     width: 2vw;
-    height: 2vw;
 }
 
 .phone {
@@ -219,6 +216,7 @@ header {
 }
 
 .phone_img {
+    margin-top: 0.2vw;
     width: 0.4vw;
     height: 0.4vw;
 }
@@ -298,6 +296,10 @@ header {
 
     color: #2A2A2A;
     text-decoration: none;
+}
+
+.over_links {
+    display: none;
 }
 
 .main_content {
@@ -450,9 +452,11 @@ header {
 
     color: #FFFFFF;
 }
+
 .bul1 {
     width: 30vw;
 }
+
 .jackdaw_img {
     width: 0.9vw;
     height: 0.6vw;
@@ -469,12 +473,11 @@ header {
     display: none;
 }
 
-.burger_line {
-    width: 3vw;
-    border: 1px solid black;
+.forMob {
+    display: none;
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
     body {}
 
     .container {
@@ -485,12 +488,28 @@ header {
         width: 100vw
     }
 
+    .container_after {
+        background: #FFFFFF;
+        width: 100vw
+    }
+
     .burger_menu {
+        margin-top: 3vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 2vw;
+        height: 4vw;
         cursor: pointer;
+    }
+
+    .burger_line {
+        width: 5vw;
+        border: 0.433vw solid white;
+    }
+
+    .burger_line_after {
+        width: 5vw;
+        border: 0.433vw solid black;
     }
 
     .logo {
@@ -531,8 +550,60 @@ header {
         display: none;
     }
 
+    .menu_after {
+        margin: 12vw 0 0 7vw;
+
+        height: 120vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu_element {
+        display: block;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 6vw;
+        line-height: 6vw;
+
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+
+        color: #1C1C1C;
+        text-decoration: none;
+    }
+
+    .menu_element_service {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3vw;
+        line-height: 2vw;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.15em;
+
+        color: #929292;
+
+        text-decoration: none;
+    }
+
+    .over_links_after {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 10vw;
+    }
+
     .main_content {
         background: none;
+    }
+
+    .main_content_after {
+        display: none;
     }
 
     .content {
@@ -607,27 +678,54 @@ header {
 
     .number {
         color: #FFFFFF;
-        font-size: 3vw
+        font-size: 3.4vw
+    }
+
+    .number_after {
+        color: black;
+        font-size: 3.4vw;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
     }
 
     .phone_text {
         color: #FFFFFF;
-        font-size: 2vw;
+        font-size: 1.7vw;
+    }
+
+    .phone_text_after {
+        color: black;
+        font-size: 1.7vw;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+
     }
 
     .phone_order_text {
         color: #FFFFFF;
-        font-size: 2vw;
+        font-size: 2.1vw;
+    }
+
+    .phone_order_text_after {
+        color: black;
+        font-size: 2.1vw;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
     }
 
     .greenCircle_img {
-        width: 1vw;
-        height: 1vw;
+        margin-right: 1vw;
+        width: 1.2vw;
+        height: 1.2vw;
     }
 
     .phone_img {
-        width: 1vw;
-        height: 1vw;
+        margin-left: 1vw;
+        width: 2vw;
+        height: 2vw;
     }
 
     .arrow_img {
@@ -653,19 +751,131 @@ header {
         line-height: 4vw;
         color: black;
     }
+
     .bul1 {
         order: 1;
     }
+
     .bul2 {
         order: 3;
     }
+
     .bul3 {
         order: 2
     }
+
     .bul4 {
         order: 2;
     }
+
     .side_border {
         display: none;
     }
+    .forMob_after {
+        margin: 10vw 2vw 0 10vw;
+        display: flex;
+        flex-direction: column;
+        height: 80vw;
+        justify-content: space-between;
+    }
+    .map_for_mob {
+        display: flex;
+    }
+
+    .map_img_mob {
+        width: 15vw;
+    }
+
+    .adress_mob {
+        margin-left: 5vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4vw;
+        line-height: 6vw;
+        /* identical to box height, or 136% */
+
+        letter-spacing: 0.05em;
+
+        color: #2A2A2A;
+    }
+
+    .calculator_for_mob {
+        display: flex;
+
+    }
+
+    .calculator_img_mob {
+        width: 15vw;
+
+    }
+
+    .calculator_text_mob {
+        margin-left: 5vw;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4vw;
+        line-height: 6vw;
+        /* identical to box height, or 136% */
+
+        letter-spacing: 0.05em;
+
+        color: #2A2A2A;
+    }
+
+    .fv {
+        margin-left: 0.2vw;
+    }
+
+    .contact_for_mob {
+        display: flex;
+
+    }
+
+    .face_img {
+        margin-top: 3vw;
+        width: 18vw;
+        align-self: flex-start;
+    }
+
+    .contact_for_mob_text {
+        margin-left: 5vw;
+
+
+        display: flex;
+        align-items: center;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4vw;
+        line-height: 6vw;
+        /* identical to box height, or 136% */
+
+        letter-spacing: 0.05em;
+
+    }
+    .link_img {
+        margin-top: 3vw;
+        width: 7vw;
+    }
+}
+
+.forHide {
+    display: none;
+}
+
+.forSee {
+    display: block;
 }
