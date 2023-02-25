@@ -11,7 +11,9 @@
 
 <body>
     <main>
-        <div class="scroll_bar"></div>
+        <div class="scroll_bar">
+            <img src="./images/scroll.svg" alt="" class="scroll_img">
+            </div>
         <div class="container" id="container">
             <header>
                 <div class="cap">
@@ -27,7 +29,9 @@
                     </div>
                     <div class="check">
                         <img src="./images/point.svg" alt="point" class="check_img">
-                        <div class="check_text">Смотреть на карте</div>
+                        <div class="check_text" onclick="handleMap()">Смотреть на карте</div>
+                        <iframe id="frame"  class="forHide" src="https://yandex.ru/map-widget/v1/?um=constructor%3Acfdd733c8df0f992a4d92f69c09ace7424489b6639050b0da7913a602415ca13&amp;source=constructor" width="10vw" height="10vw" frameborder="0"></iframe>
+
                     </div>
                     <div class="calculator">
                         <img src="./images/Calculator.svg" alt="calculator" class="calculator_img">
@@ -53,8 +57,28 @@
                                 alt="arrow" class="arrow_img">
                         </div>
                         <div class="phone_order">
-                            <div class="phone_order_text" id="phone_order_text">Заказать звонок</div> <img
+                            <div class="phone_order_text" id="phone_order_text"  onclick="handlePop()">Заказать звонок</div> <img
                                 src="./images/phone.svg" alt="phone" class="phone_img">
+                            <div class="forHide" id="form"]>
+                                <img src="./images/stroke.svg" alt="stroke" class="form_stroke"  onclick="handlePop()">
+                                <div class="res">
+                                    <div class="form_title">Быстро оставить заявку</div>
+                                    <div class="form_subtitle">Введите номер — позвоним вам
+                                        в течение 5-10 минут в рабочее время</div>
+                                    <div class="form_indication">Введите ваш номер телефона</div>
+                                    <input placeholder="+7 (___) ___-__-__" data-slots="_" class="form_phone_number"
+                                        onkeypress="handlePolicy()">
+                                    <button onclick="submitForm()" type="submit" class="form_submit_button_false"
+                                        id="submit_btn">Перезвоните
+                                        мне</button>
+                                    <div class="policy"><input type="checkbox" name="" id="policy_submit"
+                                            onclick="handlePolicy()">
+                                        <div> Нажимая кнопку вы соглашаетесь с условиями <a href="">Политики
+                                                конфиденциальности</a> </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <div class="burger_menu" onclick="handleBurgerMenu()">
@@ -100,7 +124,7 @@
                             <div>
                                 <div>Есть вопрос?</div>
                                 <strong>Задайте его нашему мастеру онлайн</strong>
-                                <div> 
+                                <div>
                                     <a href=""><img src="./images/whatsApp.svg" alt="whatsApp" class="link_img"></a>
                                     <a href=""><img src="./images/telegram.svg" alt="telegram" class="link_img"></a>
                                 </div>
@@ -135,7 +159,7 @@
                         <div class="bullet bul1"> <img src="./images/jackdaw.svg" alt="jackdaw" class="jackdaw_img">
                             <br>
                             <strong>Без предоплаты.</strong> <br>
-                            Оплата после ремонта
+                                    Оплата после ремонта
                         </div>
                         <div class="side_border"></div>
                         <div class="bullet bul2"> <img src="./images/jackdaw.svg" alt="jackdaw" class="jackdaw_img">

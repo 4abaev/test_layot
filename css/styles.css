@@ -15,7 +15,10 @@ main {
 .scroll_bar {
     width: 7.3vw;
 }
-
+.scroll_img {
+    margin:10vw 0 0 2vw;
+    width: 1.5vw;
+}
 header {
     margin: 1vw 3.3vw 0 0;
     height: 9vw;
@@ -93,6 +96,16 @@ header {
 .check {
     display: flex;
     width: 7.5vw;
+    cursor: pointer;
+    position: relative;
+}
+
+.frame {
+    position: absolute;
+    right: -12vw;
+    top: 2vw;
+    width: 30vw;
+    height: 30vw;
 }
 
 .check_img {
@@ -114,6 +127,7 @@ header {
 
     margin-left: 0.5vw;
 
+    border-bottom: red dotted 0.3vw;
 }
 
 .calculator {
@@ -259,6 +273,7 @@ header {
 .phone_order_text {
     margin-right: 0.3vw;
 
+    cursor: pointer;
 
     font-family: 'Manrope';
     font-style: normal;
@@ -272,6 +287,8 @@ header {
     letter-spacing: 0.05em;
 
     color: #2A2A2A;
+    text-decoration: underline dotted red 0.2vw;
+
 }
 
 .menu {
@@ -372,6 +389,36 @@ header {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    transition: .3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    border: 0;
+}
+
+.red_button::after {
+    content: "";
+    display: block;
+    width: 2vw;
+    height: 13vw;
+    margin-left: 3vw;
+    background: #fff;
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.5) 0%,
+            rgba(255, 255, 255, 1) 50%,
+            rgba(255, 255, 255, 0.5) 100%);
+    left: -2.2vw;
+    top: -5.5vw;
+    z-index: 1;
+    transform: rotate(45deg);
+    position: absolute;
+    animation: movingFlare 3s ease-in-out 0.05s infinite;
+}
+
+.red_button:hover {
+    background: #c50a00;
+
 }
 
 .red_button_text {
@@ -406,9 +453,21 @@ header {
 
 }
 
+.transparent_button:hover {
+    background-color: rgba(39, 39, 39, 0.5);
+    ;
+}
+
 .pickaxe_img {
     width: 1.533vw;
     height: 1.533vw;
+    transition: 0.5s;
+}
+
+.red_button:hover .pickaxe_img {
+    width: 1.533vw;
+    height: 1.533vw;
+    transform: rotate(45deg);
 }
 
 .transparent_button_text {
@@ -476,6 +535,155 @@ header {
 .forMob {
     display: none;
 }
+
+.form {
+    background: url(../images/form_bg.svg);
+    width: 26vw;
+    height: 30vw;
+    position: absolute;
+    right: 0vw;
+    top: 5vw;
+    transition: 1s;
+}
+
+.form_stroke {
+    cursor: pointer;
+    margin-top: 1.5vw;
+    margin-left: 23.5vw;
+    width: 1.5vw;
+}
+
+.form_title {
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.267vw;
+    line-height: 2.467vw;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.form_subtitle {
+    margin: 1vw 4vw 0 4vw;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    /* or 156% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.form_indication {
+    margin: 1vw 0 0 6vw;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .8vw;
+    line-height: 1.467vw;
+
+
+
+    color: #FFFFFF;
+}
+
+.form_phone_number {
+    padding: 1vw 2.5vw;
+    margin: 0 3.2vw 1vw 3.2vw;
+
+    font-size: 1.6vw;
+    line-height: 1vw;
+    width: 18.90625vw;
+    height: 4.2vw;
+    background: #FAFAFA;
+    box-shadow: inset 0px 0px 21px rgba(255, 255, 255, 0.4);
+    border-radius: 4vw;
+
+    outline: none;
+    border: none;
+}
+
+.form_submit_button {
+    margin: 0 3.2vw 1vw 3.2vw;
+    cursor: pointer;
+
+    background: #FD2016;
+    width: 18.90625vw;
+    height: 4.2vw;
+    border-radius: 4vw;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9vw;
+    /* or 150% */
+
+    font-size: 1.3vw;
+
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}
+
+.form_submit_button_false {
+    margin: 0 3.2vw 1vw 3.2vw;
+
+    cursor: not-allowed;
+    background: #3f2423;
+    width: 18.90625vw;
+    height: 4.2vw;
+    border-radius: 4vw;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9vw;
+    /* or 150% */
+
+    font-size: 1.3vw;
+
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}
+
+.policy {
+    margin: 0 3.2vw 1vw 3.2vw;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .867vw;
+    line-height: .9533vw;
+    /* or 136% */
+    display: flex;
+    align-items: flex-start;
+    color: #FFFFFF;
+}
+
+.policy input {
+    margin-right: .5vw;
+    width: 2vw;
+}
+
 
 @media (max-width: 992px) {
     body {}
@@ -633,7 +841,17 @@ header {
 
     .red_button {
         width: 85vw;
+
         height: 18vw;
+
+    }
+
+    .red_button::after {
+        width: 5vw;
+        height: 30vw;
+        margin-left: 3vw;
+        left: -2.2vw;
+        top: -5.5vw;
     }
 
     .red_button_text {
@@ -706,6 +924,7 @@ header {
     .phone_order_text {
         color: #FFFFFF;
         font-size: 2.1vw;
+        text-decoration: underline dotted red 1vw;
     }
 
     .phone_order_text_after {
@@ -714,6 +933,8 @@ header {
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
+        border-bottom: red dotted 1vw;
+
     }
 
     .greenCircle_img {
@@ -771,6 +992,7 @@ header {
     .side_border {
         display: none;
     }
+
     .forMob_after {
         margin: 10vw 2vw 0 10vw;
         display: flex;
@@ -778,6 +1000,7 @@ header {
         height: 80vw;
         justify-content: space-between;
     }
+
     .map_for_mob {
         display: flex;
     }
@@ -866,16 +1089,185 @@ header {
         letter-spacing: 0.05em;
 
     }
+
     .link_img {
         margin-top: 3vw;
         width: 7vw;
     }
+
+    .form {
+        background: url(../images/form_bg.svg);
+        width: 100vw;
+        height: 200vw;
+        position: absolute;
+        right: 0vw;
+        top: 0vw;
+        transition: 1s;
+        z-index: 55;
+    }
+
+    .form_stroke {
+        cursor: pointer;
+        margin-top: 5vw;
+        margin-left: 90vw;
+        width: 5vw;
+    }
+
+    .form_title {
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 5.267vw;
+        line-height: 5.467vw;
+        text-align: center;
+
+        color: #FFFFFF;
+
+    }
+
+    .form_subtitle {
+        margin: 1vw 4vw 0 4vw;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.5vw;
+        line-height: 3.7vw;
+        /* or 156% */
+
+        text-align: center;
+
+        color: #FFFFFF;
+
+    }
+
+    .form_indication {
+        margin: 1vw 0 0 36vw;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 3.467vw;
+
+
+
+        color: #FFFFFF;
+    }
+
+    .form_phone_number {
+        padding: 1vw 2.5vw;
+        margin: 1vw 3.2vw 1vw 30vw;
+
+        font-size: 4vw;
+        line-height: 1vw;
+        width: 40.90625vw;
+        height: 10.2vw;
+        background: #FAFAFA;
+        box-shadow: inset 0px 0px 21px rgba(255, 255, 255, 0.4);
+        border-radius: 10vw;
+
+        outline: none;
+        border: none;
+    }
+
+    .form_submit_button {
+        margin: 1vw 3.2vw 1vw 30vw;
+        cursor: pointer;
+
+        background: #FD2016;
+        width: 40.90625vw;
+        height: 10.2vw;
+        border-radius: 10vw;
+        outline: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.9vw;
+        /* or 150% */
+
+        font-size: 3vw;
+
+        letter-spacing: 0.04em;
+
+        color: #FFFFFF;
+    }
+
+    .form_submit_button_false {
+        margin: 1vw 3.2vw 1vw 30vw;
+
+        cursor: not-allowed;
+        background: #3f2423;
+        width: 40.90625vw;
+        height: 10.2vw;
+        border-radius: 10vw;
+        outline: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.9vw;
+        /* or 150% */
+
+        font-size: 3vw;
+
+        letter-spacing: 0.04em;
+
+        color: #FFFFFF;
+    }
+
+    .policy {
+        margin: 0 25.2vw 1vw 30vw;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 2vw;
+        /* or 136% */
+        display: flex;
+        align-items: flex-start;
+        color: #FFFFFF;
+    }
+
+    .policy input {
+        margin-right: .5vw;
+        width: 2vw;
+    }
+
 }
 
 .forHide {
     display: none;
+    transition: 1s;
 }
 
 .forSee {
     display: block;
+}
+
+@keyframes movingFlare {
+    0% {
+        left: -30px;
+        margin-left: 0px;
+    }
+
+    30% {
+        left: 110%;
+        margin-left: 80px;
+    }
+
+    100% {
+        left: 110%;
+        margin-left: 80px;
+    }
 }
